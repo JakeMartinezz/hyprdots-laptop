@@ -1,0 +1,17 @@
+(defwidget cyclewall_entry [icon class label onclick]
+    (box :orientation "v" :space-evenly false :class "cycle-entry"
+            (button :class "cycle-image" :class {class} :onclick {onclick} :label {label})
+            (label :class "cycle-text" :text {label})))
+
+(defwidget cyclewall []
+    (box :orientation "h" :space-evenly true :valign "center" :halign "center" :class "cycle-box"
+        (cyclewall_entry    :label "Purple" 
+                            :icon "" 
+                            :class "Purple-image" 
+                            :onclick "./scripts/Purple.sh & eww close cyclewall")
+        (powermenu_entry    :label "Cancelar" 
+                            :icon "󰅖" 
+                            :onclick "eww close cyclewall")
+            
+    )
+)

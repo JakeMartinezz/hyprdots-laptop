@@ -1,0 +1,9 @@
+.bar-widget {
+    @include window;
+    background-color: $surface2;
+    border-radius: .5rem;
+    box-shadow: 0 0 3px 0px $shadow;
+    margin-top: 0rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}

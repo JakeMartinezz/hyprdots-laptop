@@ -1,0 +1,3 @@
+(defwidget picker []
+    (button :onclick "eww close cyclewall || eww open cyclewall &" :class "picker" "󰃉")
+)
